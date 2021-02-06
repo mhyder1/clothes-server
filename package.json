@@ -10,16 +10,18 @@
     "predeploy": "npm audit",
     "deploy": "git push heroku main",
     "migrate": "postgrator --config postgrator-config.js",
-    "seed": "psql -U dunder_mifflin -d clothing -f ./seeds/seed.african_clothing_products.sql"
+    "seed": "psql -U dunder-mifflin -d clothes -f ./seeds/seed.tables.sql"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
     "knex": "^0.21.16",
     "morgan": "^1.10.0",
     "pg": "^8.5.1",

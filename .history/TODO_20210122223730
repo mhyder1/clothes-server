@@ -1,0 +1,7 @@
+npm install jsonwebtoken bcryptjs
+
+copy middlware and auth folders
+
+create auth end point
+
+install xss
